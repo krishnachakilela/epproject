@@ -1,0 +1,125 @@
+<html>
+<head>
+
+<style>
+
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 33.3%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #0000A0;
+}
+
+.right {
+  right: 0;
+  background-color: #A52A2A;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+
+
+<ul>
+<li><a href="homepage.html" class="active">News</a></li>
+</ul>
+
+
+
+
+<div class="split left">
+  <div class="centered">
+    <img src="employee.jpg" alt="employee">
+
+         <form  action="empval" method="post">
+                  <body bgcolor="#800080">
+<h2>Employee Login</h2><br>
+User Name <input type="text" id="uname" placeholder="User Name" name="uname"  required ><br><br>
+Password&nbsp  <input type="password" id="pwd" name ="pwd" required > <br><br>
+
+<input type ="submit" value="Login"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<input type ="submit" value="Cancel">
+<br><br>
+</form>
+<form action="employeereg.html">
+Click here for Register&nbsp&nbsp<input type="submit" value ="Register"></form>
+</div>
+</div>
+  
+
+
+
+
+
+
+<div class="split right">
+  <div class="centered">
+    <img src="manager.png" alt="manager">
+<form action="manval" method="post">
+    <h2>Manager Login</h2><br>
+	User Name <input type="text" id="uname" placeholder="User Name" name="uname"  required><br><br>
+	Password  <input type="password" id="pwd" name="pwd" required> <br><br><br>
+
+	<input type ="submit" value="Login"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+	<input type ="submit" value="Cancel">
+        <br><br>
+</form>
+
+<form action="managerreg.html">
+Click here for Register&nbsp&nbsp<input type="submit" value ="Register">
+</form>
+
+</div> 
+</div>  
+
+
+
+
+
+<center>
+<body bgcolor="#E6E6FA">
+  <div class="centered"> 
+ <img src="leader.jpg" alt="manager">   
+<form action="leaval" method="post">
+<h2>Leader login</h2><br>
+User Name<br> <input type="text" id="uname" placeholder="User Name" name="uname"  required><br><br>
+Password<br> <input type="password" id="pwd" name="pwd" required> <br><br>
+<input type ="submit" value="Login"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+<input type ="submit" value="Cancel">
+<br><br>
+</form>
+<form action="leaderreg.html">
+Click here for Register&nbsp&nbsp<input type="submit" value ="Register">
+</form>
+</div>
+</center>
+
+</body>
+</html> 

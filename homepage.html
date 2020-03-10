@@ -1,0 +1,274 @@
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
+<title> mellinium </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+*{
+box-sizing: border-box
+}
+body 
+{
+font-family: Verdana, sans-serif; margin:0
+}
+.mySlides {display: none
+}
+img {
+vertical-align: middle;
+}
+
+
+.slideshow-container 
+{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover 
+{
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text 
+{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext
+{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover 
+{
+  background-color: #717171;
+}
+
+
+.fade 
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade 
+{
+  from 
+{
+opacity: .4
+} 
+  to {
+opacity: 1
+}
+}
+
+@keyframes fade 
+{
+  from {
+opacity: .4
+} 
+  to {
+opacity: 1
+}
+}
+
+@media only screen and (max-width: 300px)
+{
+  .prev, .next,.text {font-size: 11px}
+}
+
+header
+{
+padding: 5px;
+font-size:15px;
+color:white;
+}
+ul
+{
+list-style-type: none;
+margin=0;
+padding=0;
+overflow: hidden;
+background-color:yellow;
+}
+li
+{
+float: left;
+}
+li a
+{
+display: inline-block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+.active
+{
+background-color: red;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+</style>
+</head>
+
+<body background="b1.jpg">
+
+
+
+<ul>
+<li><img src="logo.jpg" width="100" height="50"></img></li>
+<li> &nbsp&nbsp&nbsp&nbsp<a href="https://www.indiatoday.in" class="active">News</a></li>
+<li><a href="logindemo.html" >Login/register</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="about.html" >about</a></li> </ul>
+<marquee> <header><h1 >Welcome to Millenium Investment!!</h1></header></marquee>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="logo.jpg" style="width:100%" height="50%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="company.jpg" style="width:100%" height="50%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="company2.jpg" style="width:100%" height="50%">
+  <div class="text">Caption Three</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n)
+{
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length)
+ {
+slideIndex = 1
+}    
+  if (n < 1) {slideIndex = slides.length
+}
+  for (i = 0; i < slides.length; i++) 
+{
+   slides[i].style.display = "none";  
+}
+  for (i = 0; i < dots.length; i++) 
+{
+      dots[i].className = dots[i].className.replace(" active", "");
+}
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</header>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+</ul><br><br><br><br>
+<footer> Follow us on
+<a href="http://www.facebook.com" class="fa fa-facebook"></a>
+<a href="http://www.twitter.com" class="fa fa-twitter"></a>
+<a href="http://www.linkedin.com" class="fa fa-linkedin"></a>
+<a href="http://www.youtube.com" class="fa fa-youtube"></a>
+<a href="http://www.instagram" class="fa fa-instagram"></a>
+</footer>
+
+</body>
+</html>

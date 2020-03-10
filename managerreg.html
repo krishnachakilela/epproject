@@ -1,0 +1,97 @@
+<html>
+<head>
+<style>
+header 
+{
+  background-color:yellow;
+  padding: 5px;
+  text-align: center;
+  font-size: 10px;
+  color: black;
+}
+body
+{
+  background-color:bground.jpeg";
+  padding: 25px;	
+  font-size: 25px;
+  color: black;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.active {
+  background-color: red;
+}
+
+input[type=text], input[type=password],input[type=email] ,input[type=date]  , input[type=number] {
+  width: 25%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+	
+
+
+
+</style>
+</head>
+
+<body background="b1.jpg"  >
+<img src="logo.jpg" width=250 height=75></img>
+
+<header>
+<h1> <center> Welcome to Manager Registation Page </h1>
+</header><br>
+<ul>
+  <li><a href="homepage.html" class="active">Home</a></li>
+</ul>
+<center>
+<form action="manreg" method="post">
+
+First Name :&nbsp<input type="text" id="t1" name="uname" placeholder="First Name" required> <br><br>
+Last Name :&nbsp<input type="text" id="t2"  name="lname" placeholder="Last Name" required><br><br>
+Password  :&nbsp<input type="password" id="t3" name="pwd" onchage="validatep('t3')" required><br><br>
+Address :&nbsp<input type="text" id="t4" name="address"><br><br>
+&nbsp&nbsp&nbspDate of birth :&nbsp<input type="date" name="bday"><br><br>
+Enter Email:&nbsp<input type="email" placeholder="Enter Email" name="email" required> <br><br>
+Contact :&nbsp<input type="text"  name="num" id="t5"><br><br>
+Select you Gender :
+<input type="radio" name="gender" value="male" checked> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other<br><br>
+<input type="Submit" value="Register"></center>
+
+</form>
+<script>
+function validatep(p)
+{
+x=document.getElementById(p).value;
+if(x.length<=6)
+window.alert("Password should be minumum of 6 characters");
+}
+</script>
+</body>
+</html>
